@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Management Software</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Finani</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <button class="nav-btn">Log In</button>
+      <button class="nav-btn signup">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Online Financial Management Software</h1>
+      <p>
+        Web-based financial management tool geared towards small and medium businesses
+        to manage finances and stay on top of cash flow.
+      </p>
+      <button class="cta-btn">Get started for free</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://www.flowlu.com/site/assets/files/1028/4_financical-1.png" alt="Financial Management Tool">
+    </div>
+  </section>
+
+  <!-- Finance Manager Section -->
+  <section class="finance-manager">
+    <h2>Manage Your Finances</h2>
+    <div class="input-group">
+      <input type="number" id="income" placeholder="Enter Income" />
+      <input type="number" id="expense" placeholder="Enter Expense" />
+    </div>
+    <button id="calculate-btn">Calculate Balance</button>
+    <div class="balance-display">
+      <h3>Remaining Balance:</h3>
+      <p id="balance">0</p>
+    </div>
+  </section>
+
+  <!-- Graph Section -->
+  <section class="graph-section">
+    <h2>Income vs. Expenses</h2>
+    <div class="graphs-container">
+      <!-- Existing Chart -->
+      <canvas id="finance-chart" width="400" height="200"></canvas>
+      
+      <!-- New Bar Chart -->
+      <canvas id="income-expenses-bar-chart" width="400" height="200"></canvas>
+      
+      <!-- New Doughnut Chart -->
+      <canvas id="income-expenses-doughnut-chart" width="100" height="100"></canvas>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="solutions">
+    <h2>Solutions for Every Business</h2>
+    <div class="solutions-container">
+      <div class="solution-item">
+        <h3>Expense Tracking</h3>
+        <p>Easily record, categorize, and manage your expenses for a clear overview of your spending.</p>
+      </div>
+      <div class="solution-item">
+        <h3>Income Management</h3>
+        <p>Track all sources of income to ensure you never miss a payment or revenue stream.</p>
+      </div>
+      <div class="solution-item">
+        <h3>Custom Reports</h3>
+        <p>Generate detailed financial reports tailored to your business needs and goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="resources">
+    <h2>Resources to Help You Succeed</h2>
+    <p>Access our comprehensive guides and tutorials to learn best practices for financial management.</p>
+    <ul class="resource-list">
+      <li><a href="#">Beginner’s Guide to Financial Management</a></li>
+      <li><a href="#">Top 10 Expense Tracking Tips</a></li>
+      <li><a href="#">How to Create Custom Financial Reports</a></li>
+    </ul>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Flexible Pricing Plans</h2>
+    <div class="pricing-plans">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>Free</p>
+        <ul>
+          <li>Expense Tracking</li>
+          <li>Income Management</li>
+        </ul>
+        <button class="cta-btn">Choose Basic</button>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>$10/month</p>
+        <ul>
+          <li>Everything in Basic</li>
+          <li>Custom Reports</li>
+          <li>Priority Support</li>
+        </ul>
+        <button class="cta-btn">Choose Pro</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p>Contact Us</p>
+        <ul>
+          <li>Custom Solutions</li>
+          <li>Dedicated Support</li>
+        </ul>
+        <button class="cta-btn">Contact Us</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Connect with us:</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+      
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+        </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
