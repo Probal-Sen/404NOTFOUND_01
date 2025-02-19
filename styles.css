@@ -1,0 +1,1024 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f1c3f;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(17, 43, 92, 0.8); /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Adds a slight blur effect behind the navbar */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #c0d3f8;
+    font-size: 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent; /* Transparent background */
+    color: white;
+    border: 1px solid #c0d3f8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn.signup {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+}
+/* Navbar Enhancements */
+.navbar {
+    padding: 1rem 2rem;
+    justify-content: flex-start; /* Align navbar content to the left */
+    gap: 2rem; /* Add spacing between navbar sections */
+}
+
+.nav-links {
+    margin-left: 2rem; /* Shift the links slightly to the left */
+}
+
+.nav-links a {
+    color: #c0d3f8;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Green on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Navbar Buttons Enhancements */
+.nav-buttons .nav-btn {
+    padding: 0.7rem 1.5rem; /* Increase padding for more prominent buttons */
+    font-weight: bold; /* Make button text stand out */
+    border-radius: 25px; /* More rounded button style */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-buttons .nav-btn:hover {
+    background-color: #2ecc71; /* Green hover background */
+    color: #fff; /* White text */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.5); /* Add shadow on hover */
+}
+
+.nav-buttons .signup:hover {
+    background-color: #27ae60; /* Slightly darker green for "Sign Up" button */
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.5);
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 5rem 2rem;
+    background-color: #0f1c3f;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #c0d3f8;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+/* General Footer Styling */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Text Styling */
+  .footer-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Social Links Container */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Social Icon Styling */
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Hover Effects */
+  .social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  .social-icon:active {
+    transform: scale(1);
+  }
+  
+/* Finance Manager Section */
+.finance-manager {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #112b5c;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.finance-manager h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #c0d3f8;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #c0d3f8;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #0f1c3f;
+    color: white;
+}
+
+#calculate-btn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background-color: #28a65a;
+}
+
+.balance-display {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #c0d3f8;
+}
+
+#balance {
+    font-size: 2rem;
+    color: #2ecc71;
+    font-weight: bold;
+}
+/* Solutions Section */
+.solutions {
+    padding: 4rem 2rem;
+    background-color: #112b5c;
+    color: white;
+    text-align: center;
+  }
+  
+  .solutions-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .solution-item {
+    background-color: #0f1c3f;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .solution-item h3 {
+    color: #2ecc71;
+  }
+  
+  /* Resources Section */
+  .resources {
+    padding: 4rem 2rem;
+    background-color: #0f1c3f;
+    color: white;
+    text-align: center;
+  }
+  
+  .resource-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  .resource-list li {
+    margin: 1rem 0;
+  }
+  
+  .resource-list a {
+    color: #c0d3f8;
+    text-decoration: none;
+  }
+  
+  /* Pricing Section */
+  .pricing {
+    padding: 4rem 2rem;
+    background-color: #112b5c;
+    color: white;
+    text-align: center;
+  }
+  
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .plan {
+    background-color: #0f1c3f;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .plan h3 {
+    color: #2ecc71;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .plan ul li {
+    margin: 0.5rem 0;
+  }
+  
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background-color: #112b5c;
+  color: white;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  background-color: #0f1c3f;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.feature-item h3 {
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  color: #c0d3f8;
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f1c3f;
+    color: white;
+}
+
+/* Navbar Enhancements */
+.nav-links a {
+    position: relative;
+    color: #c0d3f8;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2ecc71;
+    transform: scale(1.1);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section Animations */
+.hero-content h1 {
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero-content p {
+    animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    background-color: #28a65a;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.5);
+}
+
+/* Finance Manager Hover Effects */
+.input-group input:hover {
+    border-color: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+#calculate-btn:hover {
+    transform: scale(1.05);
+    background-color: #27ae60;
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.5);
+}
+
+/* Solutions Section */
+.solution-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Resources Section */
+.resource-list li:hover a {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+/* Pricing Plans Hover Effects */
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #112b5c;
+    color: white;
+    margin-top: auto;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #0f1c3f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.2);
+    background-color: #2ecc71;
+}
+
+footer .social-links a img {
+    width: 20px;
+    height: 20px;
+}
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f1c3f;
+    color: white;
+}
+
+/* Navbar Enhancements */
+.nav-links a {
+    position: relative;
+    color: #c0d3f8;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2ecc71;
+    transform: scale(1.1);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section Animations */
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero-content p {
+    animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    background-color: #28a65a;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.5);
+}
+
+/* Finance Manager Hover Effects */
+.input-group input {
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-group input:hover {
+    border-color: #2ecc71;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+#calculate-btn:hover {
+    transform: scale(1.05);
+    background-color: #27ae60;
+    box-shadow: 0 4px 8px rgba(39, 174, 96, 0.5);
+}
+
+/* Solutions Section */
+.solution-item {
+    font-family: 'Poppins', sans-serif;
+}
+
+.solution-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Resources Section */
+.resource-list li:hover a {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+/* Pricing Plans Hover Effects */
+.plan {
+    font-family: 'Poppins', sans-serif;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #112b5c;
+    color: white;
+    margin-top: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #0f1c3f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.2);
+    background-color: #2ecc71;
+}
+
+footer .social-links a img {
+    width: 20px;
+    height: 20px;
+}
+/* Graph Container Adjustments */
+.graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem; /* Adjust padding to ensure no extra space below */
+}
+
+.graphs-container canvas {
+    border: 2px solid #2ecc71; /* Adding a green border to highlight the graph */
+    border-radius: 8px;
+    background-color: #0f1c3f;
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.5); /* Adding shadow for emphasis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect to Highlight Graph */
+.graphs-container canvas:hover {
+    transform: scale(1.05); /* Slight zoom effect to emphasize on hover */
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Optional: If you want to reduce the space after the graph, check the section that follows it */
+.income-expenses-section {
+    margin-bottom: 0 !important; /* Ensure no extra margin below */
+    padding-bottom: 0 !important; /* Ensure no extra padding below */
+}
+/* Graph Container Adjustments */
+.graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem; /* Adjust padding to ensure no extra space below */
+}
+
+.graphs-container canvas {
+    border: 2px solid #2ecc71; /* Adding a green border to highlight the graph */
+    border-radius: 8px;
+    background-color: #0f1c3f;
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.5); /* Adding shadow for emphasis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensures full width of its parent container */
+    height: 100%; /* Ensures full height of its parent container */
+}
+
+/* Hover Effect to Highlight Graph */
+.graphs-container canvas:hover {
+    transform: scale(1.05); /* Slight zoom effect to emphasize on hover */
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Make sure each canvas takes up equal space within flex container */
+.graphs-container canvas {
+    flex: 1 1 30%; /* Allow each graph to take up equal space, but wrap to next line if needed */
+    max-width: 33%; /* Ensure graphs stay within bounds */
+    min-width: 250px; /* Allow resizing but keep a minimum width */
+}
+
+/* Optional: If you want to reduce the space after the graph, check the section that follows it */
+.income-expenses-section {
+    margin-bottom: 0 !important; /* Ensure no extra margin below */
+    padding-bottom: 0 !important; /* Ensure no extra padding below */
+}
+/* Container for images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove any margin around the image */
+    overflow: hidden; /* Ensure the image does not overflow out of its container */
+    width: 100%; /* Make sure the container takes full width */
+}
+
+/* Style for the image itself */
+.image-container img {
+    display: block; /* Remove any unwanted space below the image */
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Ensure the image covers the area of the container */
+}
+
+/* Optional: If you want to set a max width for the image */
+.image-container img {
+    max-width: 100%; /* Ensure image doesn't stretch beyond the container's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+/* General container for images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove any margin around the image */
+    overflow: hidden; /* Ensure the image does not overflow out of its container */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+/* Style for the image */
+.image-container img {
+    display: block; /* Remove any unwanted space below the image */
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Ensure the image covers the area of the container */
+}
+
+/* Optional: If you want to set a max width for the image */
+.image-container img {
+    max-width: 100%; /* Ensure image doesn't stretch beyond the container's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Laptop (screens with width 1024px and above) */
+@media screen and (min-width: 1024px) {
+    .image-container {
+        width: 80%; /* Limit container width on larger screens */
+    }
+
+    .image-container img {
+        object-fit: cover; /* Ensures image covers the container area */
+        height: 400px; /* Set a fixed height for the image */
+    }
+}
+
+/* Tablet/Smaller Screens (between 768px and 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .image-container {
+        width: 90%; /* Adjust container width */
+    }
+
+    .image-container img {
+        object-fit: cover; /* Ensures image fills the container */
+        height: 350px; /* Set height for smaller tablets */
+    }
+}
+
+/* Mobile (screens less than 768px) */
+@media screen and (max-width: 767px) {
+    .image-container {
+        width: 100%; /* Ensure container takes full width */
+    }
+
+    .image-container img {
+        object-fit: cover; /* Ensures image fills the container */
+        height: 250px; /* Set height for mobile */
+    }
+}
+.graph-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .chart-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .chart-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .graph-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .chart-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .chart-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  .graph-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .chart-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .chart-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+/* Graph Section Styling */
+.graph-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.chart-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Increased width from 450px to 500px */
+    height: 350px; /* Keep the height consistent */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+  
+  .chart-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 300px;
+}
+
+
